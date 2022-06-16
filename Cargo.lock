@@ -3,5 +3,5 @@
 version = 3
 
 [[package]]
-name = "espresso-system-common"
+name = "espresso-systems-common"
 version = "0.1.0"

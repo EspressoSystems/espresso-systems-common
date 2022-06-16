@@ -1,5 +1,5 @@
 [package]
-name = "espresso-system-common"
+name = "espresso-systems-common"
 version = "0.1.0"
 authors = ["Victor Koenders <git@trangar.com>"]
 edition = "2021"
