@@ -1,0 +1,8 @@
+[package]
+name = "espresso-system-common"
+version = "0.1.0"
+authors = ["Victor Koenders <git@trangar.com>"]
+edition = "2021"
+description = "Common constants and utility functions for Espresso Systems codebases"
+repository = "https://github.com/espressosystems/espresso-sytem-common"
+license-file = "LICENSE"
