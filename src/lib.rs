@@ -18,6 +18,12 @@ pub mod jellyfish {
     pub const LEAF: &str = "LEAF";
     pub const PROOF: &str = "PROOF";
     pub const BATCHPROOF: &str = "BATCHPROOF";
+
+    pub const BLSVERKEY: &str = "BLSVERKEY";
+    pub const BLSSIGNINGKEY: &str = "BLSSIGNINGKEY";
+    pub const BLSSIG: &str = "BLSSIG";
+
+    pub const SCHNORRVERKEY: &str = "SCHNORRVERKEY";
 }
 
 pub mod espresso {
