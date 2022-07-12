@@ -1,0 +1,87 @@
+# Copyright © 2022 Espresso Systems, Inc. All rights reserved.
+#
+# This file contains literal strings and templates used for generating web API documentation.
+
+[meta]
+FORMAT_VERSION = "0.1.0"
+
+# HTML_TOP, HTML_BOTTOM, HEADING_*, and PARAMETER_* are used for composing API help formatted
+# like a reference manual.
+
+HTML_TOP = """
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <title>{{NAME}} Reference</title>
+    <link rel='stylesheet' href='/public/css/style.css'>
+    <script src='/public/js/script.js'></script>
+    <link rel='icon' type='image/svg+xml'
+     href='/public/favicon.svg'>
+  </head>
+  <body>
+    <div><a href='https://espressosys.com'><img src='/public/espressosys_logo.svg'
+              alt='Espresso Systems Logo'
+              /></a></div>
+    <h1>{{NAME}} API {{FORMAT_VERSION}} Reference</h1>
+    <p>{{DESCRIPTION}}</p>
+"""
+
+HTML_BOTTOM = """
+    <h1>&nbsp;</h1>
+    <p>Copyright © 2022 Espresso Systems. All rights reserved.</p>
+  </body>
+</html>
+"""
+
+HEADING_ENTRY = "<a name='{{NAME}}'><h3 class='entry'><span class='meth'>{{METHOD}}</span> {{NAME}}</h3></a>\n"
+HEADING_ROUTES = "<h3>Routes</h3>\n"
+HEADING_PARAMETERS = "<h3>Parameters</h3>\n"
+HEADING_DESCRIPTION = "<h3>Description</h3>\n"
+
+ROUTE_PATH = "<p class='path'><a href='{{PATH}}'>{{PATH}}</a></p>\n"
+
+PARAMETER_TABLE_OPEN = "<table>\n"
+PARAMETER_TABLE_CLOSE = "</table>\n\n"
+PARAMETER_ROW = "<tr><td class='parameter'>{{NAME}}</td><td class='type'>{{TYPE}}</td></tr>\n"
+PARAMETER_NONE = "<div class='meta'>None</div>"
+
+# Used for simple web responses, such as error messages. There are only two substitution parameters:
+# TITLE and BODY.
+MINIMAL_HTML = """
+<!doctype html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <link rel='stylesheet' href='/public/css/style.css'>
+    <title>{{TITLE}}</title>
+    <link rel='icon' type='image/svg+xml'
+     href='/public/favicon.svg'>
+  </head>
+  <body>
+    <div><img src='/public/espressosys_logo.svg'
+              alt='Espresso Systems Logo'
+              /></div>
+    <h1>{{TITLE}}</h1>
+    {{BODY}}
+    <h1>&nbsp;</h1>
+    <p>Copyright © 2022 Espresso Systems. All rights reserved.</p>
+  </body>
+</html>
+"""
+
+[route.help]
+PATH = ["/help", "/help/:endpoint"]
+METHOD = "GET"
+"endpoint" = "Literal"
+DOC = "Provides complete reference documentation if no endpoint is provided or help on a single endpoint"
+
+[route.healthcheck]
+PATH = ["/healthcheck"]
+METHOD = "GET"
+DOC = "Provides server status as JSON such as `{status: Available}`"
+
+[route.version]
+PATH = ["/version"]
+METHOD = "GET"
+DOC = "Reports versions as JSON"
