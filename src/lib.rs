@@ -10,6 +10,8 @@
 //! pub struct AssetCodeSeed(...);
 //! ```
 
+#![no_std]
+
 pub mod brand;
 
 pub mod cap {
