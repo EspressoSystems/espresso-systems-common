@@ -10,7 +10,10 @@
 //! pub struct AssetCodeSeed(...);
 //! ```
 
-#![no_std]
+#![cfg_attr(not(feature = "std"), no_std)]
+
+#[cfg(feature = "metrics")]
+pub mod metrics;
 
 pub mod brand;
 

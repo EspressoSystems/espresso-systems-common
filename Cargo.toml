@@ -6,3 +6,7 @@ edition = "2021"
 description = "Common constants and utility functions for Espresso Systems codebases"
 repository = "https://github.com/espressosystems/espresso-sytem-common"
 license-file = "LICENSE"
+
+[features]
+std = []
+metrics = ["std"]
