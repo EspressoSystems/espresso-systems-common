@@ -69,6 +69,28 @@ pub mod hotshot {
     pub mod tag {
         pub const PEER_ID: &str = "PEER_ID";
         pub const PRIVKEY_ID: &str = "PEER_PRIVKEY";
+
+        pub const ORCHESTRATOR_VRF_BLOCK: &str = "ORCH_VRF_BLOCK";
+        pub const ORCHESTRATOR_VRF_TXN: &str = "ORCH_VRF_TXN";
+        pub const ORCHESTRATOR_VRF_STATE: &str = "ORCH_VRF_STATE";
+
+        pub const ORCHESTRATOR_BLOCK: &str = "ORCH_BLOCK";
+        pub const ORCHESTRATOR_TXN: &str = "ORCH_TXN";
+        pub const ORCHESTRATOR_STATE: &str = "ORCH_STATE";
+
+        pub const DENTRY_BLOCK: &str = "DENTRY_BLOCK";
+        pub const DENTRY_TXN: &str = "DENTRY_TXN";
+        pub const DENTRY_STATE: &str = "DENTRY_STATE";
+
+        pub const DUMMY_BLOCK: &str = "DUMMY_BLOCK";
+        pub const DUMMY_TXN: &str = "DUMMY_TXN";
+        pub const DUMMY_STATE: &str = "DUMMY_STATE";
+
+        pub const STATIC_VOTE_TOKEN: &str = "STATIC_VOTE";
+        pub const VRF_VOTE_TOKEN: &str = "VRF_VOTE";
+
+        pub const QC: &str = "QC";
+        pub const LEAF: &str = "LEAF";
     }
 }
 
