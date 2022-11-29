@@ -98,7 +98,6 @@ pub mod jellyfish {
     /// Tags to be used for [`tagged-base64`](https://github.com/espressosystems/tagged-base64)
     pub mod tag {
         pub const VERKEY: &str = "VERKEY";
-        pub const SIGNKEYPAIR: &str = "SIGNKEYPAIR";
         pub const SIG: &str = "SIG";
         pub const NODE: &str = "NODE";
         pub const LEAF: &str = "LEAF";
@@ -109,6 +108,9 @@ pub mod jellyfish {
         pub const BLSSIGNINGKEY: &str = "BLSSIGNINGKEY";
         pub const BLSSIG: &str = "BLSSIG";
 
+        pub const SCHNORRSIGNKEYPAIR: &str = "SCHNORRSIGNKEYPAIR";
         pub const SCHNORRVERKEY: &str = "SCHNORRVERKEY";
+        pub const SCHNORRSIGNINGKEY: &str = "SCHNORRSIGNINGKEY";
+        pub const SCHNORRSIG: &str = "SCHNORRSIG";
     }
 }
