@@ -97,7 +97,6 @@ pub mod hotshot {
 pub mod jellyfish {
     /// Tags to be used for [`tagged-base64`](https://github.com/espressosystems/tagged-base64)
     pub mod tag {
-        pub const VERKEY: &str = "VERKEY";
         pub const NODE: &str = "NODE";
         pub const LEAF: &str = "LEAF";
         pub const PROOF: &str = "PROOF";
