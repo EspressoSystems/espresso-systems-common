@@ -103,11 +103,11 @@ pub mod jellyfish {
         pub const BATCHPROOF: &str = "BATCHPROOF";
 
         pub const BLS_VER_KEY: &str = "BLS_VER_KEY";
-        pub const BLS_SIGNING_KEY: &str = "BLS_SIGNING_KEY_";
+        pub const BLS_SIGNING_KEY: &str = "BLS_SIGNING_KEY";
         pub const BLS_SIG: &str = "BLS_SIG";
 
         pub const SCHNORR_KEY_PAIR: &str = "SCHNORR_KEY_PAIR";
-        pub const SCHNORR_VERK_EY: &str = "SCHNORR_VERKEY";
+        pub const SCHNORR_VER_KEY: &str = "SCHNORR_VER_KEY";
         pub const SCHNORR_SIGNING_KEY: &str = "SCHNORR_SIGNING_KEY";
         pub const SCHNORR_SIG: &str = "SCHNORR_SIG";
     }
