@@ -97,18 +97,18 @@ pub mod hotshot {
 pub mod jellyfish {
     /// Tags to be used for [`tagged-base64`](https://github.com/espressosystems/tagged-base64)
     pub mod tag {
-        pub const VERKEY: &str = "VERKEY";
-        pub const SIGNKEYPAIR: &str = "SIGNKEYPAIR";
-        pub const SIG: &str = "SIG";
         pub const NODE: &str = "NODE";
         pub const LEAF: &str = "LEAF";
         pub const PROOF: &str = "PROOF";
         pub const BATCHPROOF: &str = "BATCHPROOF";
 
-        pub const BLSVERKEY: &str = "BLSVERKEY";
-        pub const BLSSIGNINGKEY: &str = "BLSSIGNINGKEY";
-        pub const BLSSIG: &str = "BLSSIG";
+        pub const BLS_VER_KEY: &str = "BLS_VER_KEY";
+        pub const BLS_SIGNING_KEY: &str = "BLS_SIGNING_KEY";
+        pub const BLS_SIG: &str = "BLS_SIG";
 
-        pub const SCHNORRVERKEY: &str = "SCHNORRVERKEY";
+        pub const SCHNORR_KEY_PAIR: &str = "SCHNORR_KEY_PAIR";
+        pub const SCHNORR_VER_KEY: &str = "SCHNORR_VER_KEY";
+        pub const SCHNORR_SIGNING_KEY: &str = "SCHNORR_SIGNING_KEY";
+        pub const SCHNORR_SIG: &str = "SCHNORR_SIG";
     }
 }
