@@ -91,6 +91,8 @@ pub mod hotshot {
 
         pub const QC: &str = "QC";
         pub const LEAF: &str = "LEAF";
+
+        pub const ENCODED_PUB_KEY: &str = "PUBKEY";
     }
 }
 
