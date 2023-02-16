@@ -78,14 +78,6 @@ pub mod hotshot {
         pub const ORCHESTRATOR_TXN: &str = "ORCH_TXN";
         pub const ORCHESTRATOR_STATE: &str = "ORCH_STATE";
 
-        pub const DENTRY_BLOCK: &str = "DENTRY_BLOCK";
-        pub const DENTRY_TXN: &str = "DENTRY_TXN";
-        pub const DENTRY_STATE: &str = "DENTRY_STATE";
-
-        pub const DUMMY_BLOCK: &str = "DUMMY_BLOCK";
-        pub const DUMMY_TXN: &str = "DUMMY_TXN";
-        pub const DUMMY_STATE: &str = "DUMMY_STATE";
-
         pub const STATIC_VOTE_TOKEN: &str = "STATIC_VOTE";
         pub const VRF_VOTE_TOKEN: &str = "VRF_VOTE";
 
