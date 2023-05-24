@@ -1,0 +1,38 @@
+# Copyright (c) 2022 Espresso Systems (espressosys.com)
+# This file is part of the Espresso library.
+
+name: Build
+
+on:
+  push:
+    branches:
+      - main
+      - release-*
+    tags:
+      # YYYYMMDD
+      - "20[0-9][0-9][0-1][0-9][0-3][0-9]*"
+  pull_request:
+  schedule:
+    - cron: "0 0 1 * *"
+  workflow_dispatch:
+
+env:
+  RUST_LOG: info,libp2p=off
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        name: Checkout Repository
+
+      - name: Format Check
+        run: cargo fmt -- --check
+
+      - name: Lint
+        run: |
+          cargo clippy --workspace -- -D warnings
+
+      - name: Build
+        run: |
+          cargo build --workspace
